@@ -17,7 +17,7 @@ async function main() {
   };
 
   // process.on(...) catches termination signals to gracefully shut down
-  process.on("SIGINT", shutdown); // Signal Interrupt for ctrl+c
+  process.on("SIGINT", shutdown); // Signal Interrupt for ctrl+c on terminal
   process.on("SIGTERM", shutdown); // Signal Terminate for kill command
 }
 

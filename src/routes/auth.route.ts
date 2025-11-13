@@ -10,6 +10,7 @@ const router = Router();
 // public
 router.post("/auth/register", authController.register);
 router.post("/auth/login", authController.login);
+router.post("/auth/logout", authenticate, authController.logout);
 
 // protected - view all users: only ADMIN or MODERATOR
 router.get(
